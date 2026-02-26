@@ -130,18 +130,124 @@
 
         </section>
 
-    <!--Member 4 — Comparison table and Order form (By Leonard Nzekwe)-->
-        <section id="Product-Comp-tbl">
-            <h2>Product Comparison Table</h2>
+<!--Member 4 — Comparison table and Order form (By Leonard Nzekwe)-->
+<section id="Product-Comp-tbl">
+    <h2>Product Comparison Table</h2>
+    
+    <table border="1" style="width: 100%; margin-bottom: 20px;">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Material</th>
+                <th>Availability</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Classic Leather Boot</td>
+                <td>₦312,000.00</td>
+                <td>Leather</td>
+                <td>In Stock</td>
+                <td>4.5/5</td>
+            </tr>
+            <tr>
+                <td>Nike SuperRep Go</td>
+                <td>₦185,000.00</td>
+                <td>Mesh</td>
+                <td>In Stock</td>
+                <td>4.7/5</td>
+            </tr>
+            <tr>
+                <td>CASIO Wristwatch</td>
+                <td>₦50,000.00</td>
+                <td>Stainless Steel</td>
+                <td>In Stock</td>
+                <td>4.3/5</td>
+            </tr>
+            <tr>
+                <td>Nike Air Force 1 Shadow</td>
+                <td>₦175,000.00</td>
+                <td>Canvas/Synthetic</td>
+                <td>In Stock</td>
+                <td>4.8/5</td>
+            </tr>
+            <tr>
+                <td>ALDO Heels</td>
+                <td>₦1,500,000.00</td>
+                <td>Premium Leather</td>
+                <td>Limited Stock</td>
+                <td>4.6/5</td>
+            </tr>
+            <tr>
+                <td>Speake-Marin Serpent</td>
+                <td>₦199,999.00</td>
+                <td>Brass/Steel</td>
+                <td>In Stock</td>
+                <td>4.9/5</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-        </section>
-        <section id="order-Form">
+<section id="order-Form">
+    <form action="">
+        <h2>Customer Registration & Order Form</h2>
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
             
-            <form action="">
-                <h2>Customer Registration & Order Form</h2>
-
-            </form>
-        </section>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" rows="3" required></textarea><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Order Details</legend>
+            <label for="product">Select Product: </label>
+            <select id="product" name="product" required>
+                <option value="">--Choose a Product--</option>
+                <option value="leather-boot">Classic Leather Boot</option>
+                <option value="nike-superrep">Nike SuperRep Go</option>
+                <option value="casio-watch">CASIO Wristwatch</option>
+                <option value="nike-airforce">Nike Air Force 1 Shadow</option>
+                <option value="aldo-heels">ALDO Heels</option>
+                <option value="speake-marin">Speake-Marin Serpent</option>
+            </select><br><br>
+            
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+            
+            <label for="paymentmethod">Payment Method: </label>
+            <select id="paymentmethod" name="paymentmethod" required>
+                <option value="">--Select Payment Method--</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="transfer">Bank Transfer</option>
+                <option value="cash">Cash on Delivery</option>
+            </select><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferences</legend>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter</label><br><br>
+            
+            <label for="comments">Special Instructions: </label>
+            <textarea id="comments" name="comments" rows="3"></textarea><br><br>
+        </fieldset>
+        
+        <button type="submit">Place Order</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</section>
 
     <!--Member 5 — Reviews section and footer (By Nnamdi Amechi Enyobi)-->
         <section id="reviews">
