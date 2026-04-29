@@ -1,0 +1,10 @@
+.about-hero {
+    background: url('../images/decor1.jpg') center/cover no-repeat;
+    color: rgb(150, 132, 252);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+section {
+    padding: 20px;
+}
